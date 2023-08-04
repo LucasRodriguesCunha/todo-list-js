@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do List Avançado</title>
+
+    <!-- Javascript -->
+    <script src="script.js" defer></script>
+
+    <!-- Estilo -->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Fonte -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+</body>
+<div class="to-do-container">
+    <header>
+        <h1>To-do List Avançado</h1>
+    </header>
+    <form id="to-do-form">
+        <p>Adicione a tarefa:</p>
+        <div class="form-controle">
+            <input type="text" id="to-do-input" placeholder="O que você vai fazer?">
+            <button type="submit">
+                <img src="imagens/plus.svg" alt="Botão de adicionar">
+            </button>
+        </div>
+    </form>
+    <form id="editar-form">
+        <p>Edite a tarefa:</p>
+        <div class="form-controle">
+            <input type="text" id="editar-input">
+            <button type="submit">
+                <img src="imagens/check-all.svg" alt="Botão de feito">
+            </button>
+        </div>
+        <button id="cancelar-btn">Cancelar</button>
+    </form>
+    <div class="" id="barra-de-ferramentas">
+        <div id="pesquisar">
+            <h4>Pesquisar:</h4>
+            <form>
+                <input type="text" id="pesquisar-input" placeholder="Pesquisar">
+                <button id="apagar-busca">
+                    <img src="imagens/trash.svg" alt="Botão de deletar">
+                </button>
+            </form>
+        </div>
+        <div id="filtro">
+            <h4>Filtrar:</h4>
+            <select id="select-filtro">
+                <option value="all">Todos</option>
+                <option value="feito">Feitos</option>
+                <option value="to-do">A fazer</option>
+            </select>
+        </div>
+        <div id="to-do-lista">
+            <div class="to-do">
+                <h3>Estou fazendo alguma coisa...</h3>
+                <button class="finalizado-to-do">
+                    <img src="imagens/check.svg" alt="Botão de feito">
+                </button><button class="editar-to-do">
+                    <img src="imagens/pen.svg" alt="Botão de editar">
+                </button><button class="remover-to-do">
+                    <img src="imagens/x.svg" alt="Botão de remover">
+                </button>
+            </div>
+            <div class="to-do">
+                <h3>Estudar JavaScript</h3>
+                <button class="finalizado-to-do">
+                    <img src="imagens/check.svg" alt="Botão de feito">
+                </button><button class="editar-to-do">
+                    <img src="imagens/pen.svg" alt="Botão de editar">
+                </button><button class="remover-to-do">
+                    <img src="imagens/x.svg" alt="Botão de remover">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</html>
